@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender {
+    width: 450px;
+}
+
+.calender .calender_top {
+    width: 100%;
+    height: 120px;
+    background-color: lightseagreen;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender .calender_top h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.calender .calender_top h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+.calender .calender_bottom {
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.calender .calender_bottom .week_days {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.calender .calender_bottom .week_days div {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    pointer-events: none;
+}
+
+.calender .calender_bottom .days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.calender .calender_bottom .days div {
+    font-size: 14px;
+    color: #fff;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender .calender_bottom .days div:hover:not(.empty) {
+    border: 2px solid gray;
+    cursor: pointer;
+}
+.calender .calender_bottom .days div.today {
+    background-color: lightseagreen;
+}
